@@ -1,3 +1,16 @@
-<p>
-  multiple-choice-question works!
-</p>
+<div class = "container-fluid">
+ <ul class = list-group>
+   <li class = "list-group-item">
+     {{question.questionText}}
+   </li>
+   <br/>
+
+   <li class ="list-group-item"
+         *ngFor= "let choice of question.choices">
+     {{choice.text}}
+     <input name =  "{{question._id}}"
+            type="radio" class ="float-right"/>
+   </li>
+ </ul>
+
+</div>

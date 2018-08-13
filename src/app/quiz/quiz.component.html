@@ -9,20 +9,34 @@
         <br/>
         <li  class = "list-group-item"
                 *ngFor = "let question of quiz.questions">
-            <a class="float-right">{{question.points}} </a>
-            <h5> {{question.title}}</h5>
-            <br/>
-            <p>{{question.description}}</p>
+            <div class = row>
+                <h5 class = "col-2"> {{question.title}}</h5>
+                <h5 class = "col-8">{{question.description}}</h5>
+            <h5 class="float-right col-2">{{question.points}} pts </h5>
+            </div>
 
             <div [ngSwitch] = "question.questionType">
-                <div *ngSwitchCase="'MULTIPLE_CHOICE'"> <h6>Multiple-Choice</h6></div>
-                <div *ngSwitchCase="'TRUE_FALSE'"> <h6>True Or False</h6></div>
-                <div *ngSwitchCase="'FILL_BLANKS'"> <h6>Fill In The Blanks</h6></div>
-                <div *ngSwitchCase="'ESSAY'"> <h6>Essay Type</h6></div>
+                <app-multiple-choice-question [question]="question"
+                        *ngSwitchCase="'MULTIPLE_CHOICE'">
+                </app-multiple-choice-question>
+
+                <app-true-false-question [question]="question"
+                        *ngSwitchCase="'TRUE_FALSE'">
+
+                </app-true-false-question>
+
+                <app-fill-blanks-question [question]="question"
+                        *ngSwitchCase="'FILL_BLANKS'">
+                </app-fill-blanks-question>
+
+                <app-essay-question [question]="question"
+                        *ngSwitchCase="'ESSAY'">
+                </app-essay-question>
             </div>
         </li>
-
     </ul>
+    <br/>
+    <button class = "btn btn-primary float-right btn-lg" (click)="submitQuiz(quiz)"> Submit</button>
 
 
 </div>
