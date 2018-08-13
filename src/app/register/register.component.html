@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<div class="container-fluid">
+  <span class = "float-right">
+    <div class = "btn-group">
+      <button class = "btn">
+        <a routerLink="/login">Log-In</a>
+      </button>
+
+      <button class = "btn">
+      <a routerLink = "/"> Home</a>
+      </button>
+
+    </div>
+  </span>
+  <br/>
+  <h2> Register </h2>
+
+
+  <div class="form-group">
+    <label for="usernameFld"> Username </label>
+    <input [(ngModel)] = "username"
+           type="text" class="form-control" id="usernameFld"  placeholder="Enter username">
+  </div>
+
+  <div class="form-group">
+    <label for="passwordFld">Password</label>
+    <input  [(ngModel)] = "password"
+            type="password" class="form-control" id="passwordFld" placeholder="Password">
+  </div>
+
+  <div class="form-group">
+    <label for="passwordFld2">Confirm-Password</label>
+    <input  [(ngModel)] = "password2"
+            type="password" class="form-control" id="passwordFld2" placeholder="Confirm - Password">
+  </div>
+
+
+  <button  (click)= "register(username,password)"
+           type="submit" class="btn btn-primary" id = "submitBtn">Submit</button>
+
+</div>

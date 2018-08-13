@@ -1,0 +1,157 @@
+<div class="container-fluid"  ng-app="DemoApp" ng-controller="DemoController">
+
+  <h1> Course-Information-Page</h1>
+
+
+  <ul class = "list-group">
+    <li class="list-group-item active">
+      Courses
+    </li>
+    <br/>
+    <li
+      class="list-group-item"
+      [ngClass] = "{'active': course.id === selectedCourse.id}"
+      (click)= "selectCourse(course)"
+      *ngFor = "let course of courses">
+
+       {{course.title}}
+    </li>
+
+  </ul>
+  <br/>
+
+<div class = "row">
+  <div [hidden] = "!moduleStatus" class = "col-4">
+
+
+
+      <ul class = "list-group">
+        <li class="list-group-item active">
+          <h2>  Modules of {{selectedCourse.title}} </h2>
+        </li>
+        <br/>
+        <li
+          class="list-group-item"
+          [ngClass] = "{'active': module.id === selectedModule.id}"
+          (click)= "selectModule(module)"
+          *ngFor = "let module of selectedCourse.module">
+
+         {{module.title}}
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+  <div class = "col-8">
+    <div [hidden] = "!lessonStatus">
+    <h3>Lessons of {{selectedModule.title}}</h3>
+    <ul class = "nav nav-tabs">
+      <li
+        [ngClass] = "{'active': lesson.id === selectedLesson.id}"
+        (click) = "selectLesson(lesson)"
+        *ngFor = "let lesson of selectedModule.lessons"
+          class = "nav-link">
+        {{lesson.title}}
+      </li>
+    </ul>
+    </div>
+
+
+
+    <div [hidden] = "!widgetStatus">
+      <h4> Content of {{selectedLesson.title}}</h4>
+      <br/>
+      <div  (click)="selectWidget(widget)"
+        *ngFor = "let widget of selectedLesson.widgets">
+
+
+        <div [ngSwitch] = "widget.widgetType">
+
+
+          <div *ngSwitchCase= "'Heading Widget'">
+            <div [ngSwitch] = "widget.size">
+              <h1 *ngSwitchCase = "'4'"> {{widget.text}} </h1>
+              <h2 *ngSwitchCase = "'3'"> {{widget.text}} </h2>
+              <h3 *ngSwitchCase = "'2'"> {{widget.text}} </h3>
+              <h4 *ngSwitchCase = "'1'"> {{widget.text}} </h4>
+            </div>
+          </div>
+
+
+          <div *ngSwitchCase= "'Link Widget'">
+            <a href = "{{widget.link}}"> {{widget.text}}</a>
+
+          </div>
+
+          <br/>
+
+          <div *ngSwitchCase = "'List Widget'">
+
+            <div [ngSwitch] = "widget.layout">
+
+
+
+
+               <ol *ngSwitchCase = "'ol'">
+
+                <li
+                  *ngFor = "let item of widget.text.split('\n')">
+                  {{item}}
+                </li>
+               </ol>
+
+
+
+              <ul
+                *ngSwitchCase = "'ul'">
+
+                <li
+                  *ngFor = "let item of widget.text.split('\n')">
+                  {{item}} </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+          <br/>
+
+          <div *ngSwitchCase= "'Paragraph Widget'">
+            <p>  {{widget.text}}</p>
+          </div>
+          <br/>
+
+
+          <div *ngSwitchCase= "'Image Widget'">
+
+            <img src="{{widget.link}}"/>
+
+          </div>
+
+          <br/>
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+
+

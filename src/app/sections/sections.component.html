@@ -1,0 +1,70 @@
+<div class = "container-fluid">
+
+  <h2>Sections For Course : {{courseId}}</h2>
+  <br/>
+
+  <ul class="list-group-item">
+    <li>
+      <label for = "sname" > Section Name</label>
+
+      <input
+        [(ngModel)] = "title"
+        placeholder="Enter Section"
+        class = "form-control"
+         id = "sname"/>
+      <br/>
+
+      <label for = "remSeats" >Available Seats</label>
+
+      <input
+        [(ngModel)] = "remSeats"
+        placeholder="Enter Available Seats"
+        class = "form-control"
+        id = "remSeats"/>
+      <br/>
+
+      <label for = "maxSeats" > Maximum Seats</label>
+
+      <input
+        [(ngModel)] = "maxSeats"
+        placeholder="Enter Maximum Seats"
+        class = "form-control"
+        id = "maxSeats"/>
+
+      <br/>
+
+      <button (click)="createSection(title, remSeats, maxSeats)"
+              class="btn btn-success form-control">
+        Add Section
+      </button>
+
+      <br>
+      <button (click)="updateSection()"
+              class="btn btn-primary form-control">
+        Save Section
+      </button>
+      <br/>
+    </li>
+
+    <li *ngFor ="let section of sections" class="list-group-item">
+      <div class="row">
+        <div class = "col-8">
+          Name : {{section.title}} &nbsp;Seats Available: {{section.remSeats}} &nbsp; Maximum Seats : {{section.maxSeats}}
+        </div>
+        <div class = "col-4">
+      <span class="float-right btn-group">
+      <button class="btn btn-primary"
+        (click)= "setSection(section.title, section.remSeats, section.maxSeats, section._id)">
+        Update Section
+      </button>
+        <button class="btn btn-danger"
+                (click) = "deleteSection(section._id)">
+          Delete Section
+        </button>
+      </span>
+        </div>
+        </div>
+    </li>
+
+  </ul>
+</div>

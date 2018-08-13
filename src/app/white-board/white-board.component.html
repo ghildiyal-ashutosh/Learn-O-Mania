@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <h1> Welcome To  WhiteBoard</h1>
+
+  <span class="float-right">
+    <div class="btn-group">
+
+        <button (click)="logout()"
+          [hidden]="viewStatus"
+          class="btn">
+     LogOut
+  </button>
+
+
+
+      <button [hidden]="!viewStatus"
+        class="btn">
+    <a routerLink="/login"> LogIn </a>
+  </button>
+
+
+      <button class="btn">
+    <a routerLink="/register"> Register </a>
+  </button>
+      <button class="btn">
+    <a routerLink="/profile"> Profile </a>
+  </button>
+    </div>
+  </span>
+
+  <span class="float-left">
+    <div class="btn-group">
+      <button class="btn" >
+        <a routerLink= "/courses"> Course-Navigator</a>
+      </button>
+
+       <button class="btn">
+        <a routerLink= "/enrollment"> Course-Enrollment</a>
+      </button>
+    </div>
+  </span>
+
+  <br/>
+  <br/>
+
+  <ul class="list-group">
+
+
+    <li
+      class = "list-group-item active">
+      Enrolled Course/Sections
+    </li>
+
+       <li *ngFor="let enrolled of sections"
+         class = "list-group-item">
+          {{enrolled.section.title}}
+        </li>
+  </ul>
+  <br/>
+  <br/>
+
+
+
+
+  <!-- equivalent to Router in react -->
+</div>

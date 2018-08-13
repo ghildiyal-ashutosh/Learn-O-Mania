@@ -1,0 +1,106 @@
+<div class ="container-fluid" >
+  <span class = "float-right">
+    <div class ="btn-group">
+      <button (click)= "logout()" class="btn">
+       Log-Out
+      </button>
+      <button class="btn">
+      <a routerLink='/'> Home </a>
+      </button>
+       <button class="btn btn-dark" [hidden]="adminStatus">
+         <a routerLink = '/admin'>Admin</a>
+       </button>
+
+      <button [hidden]="adminStatus"
+              class=" btn btn-block ">
+        <a routerLink = '/quizzes'> Quizzes
+        </a></button>
+
+    </div>
+  </span>
+  <br/>
+  <br/>
+
+<h3 [hidden]="!adminStatus"> LogIn to have full access of your profile</h3>
+
+
+<div [hidden]="adminStatus">
+
+  <h2> Welcome {{currentUser.username}} !!!</h2>
+
+  <label for = "inputFld1"> Username </label>
+  <input [(ngModel)]="username"
+         placeholder="username"
+         class="form-control"
+          id = "inputFld1"/>
+
+  <label for = "inputFld2" > Firstname </label>
+  <input [(ngModel)]="firstName"
+         placeholder="First Name"
+         class="form-control"
+         id = "inputFld2"/>
+
+  <label for = "inputFld3" >Last Name </label>
+  <input [(ngModel)]="lastName"
+         placeholder="LastName"
+         class="form-control"
+         id = "inputFld3"/>
+
+  <label for = "inputFld4"> Email </label>
+  <input [(ngModel)]="email"
+         placeholder="Email"
+         class="form-control"
+         id = "inputFld4"
+         type = "email"/>
+
+  <label for = "inputFld5"> Contact </label>
+  <input [(ngModel)]="contact"
+         placeholder="Contact"
+         class="form-control"
+         id = "inputFld5"
+         type = "number"/>
+</div>
+
+  <br/>
+
+  <div [hidden]="adminStatus">
+
+  <button class = "form-control btn btn-primary" (click)="update()"> Update</button>
+  <br/>
+  <br/>
+
+  <h3> Enrolled Sections</h3>
+
+  <br/>
+
+    <ul class = "list-group">
+
+        <li  *ngFor = "let enrolled of sections"
+          class = "list-group-item">
+          {{enrolled.section.title}}
+          <span class = float-right> <button (click)="unenroll(enrolled.section)"
+            class = "btn btn-danger"> UN-Enroll</button></span>
+        </li>
+
+    </ul>
+
+    <br/>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
