@@ -13,5 +13,12 @@ export class QuestionServiceClient {
         });
     }
 
+    deleteQuestion (questionId) {
+        return fetch ((QUESTION_API_URL + '/question/' + questionId), {
+            method: 'DELETE',
+            credentials : 'include'
+        }).then((response) => response);
+    }
+
 }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {QuizServiceClient} from '../../services/quiz.service.client';
 import {ActivatedRoute} from '@angular/router';
+import {SubmissionServiceClient} from '../../services/submission.service.client';
 
 @Component({
   selector: 'app-quiz',
@@ -14,11 +15,14 @@ export class QuizComponent implements OnInit {
 
 
   constructor( private quizService: QuizServiceClient,
-               private activatedRoute: ActivatedRoute) {}
+               private activatedRoute: ActivatedRoute,
+               private submissionService: SubmissionServiceClient) {}
 
-               submitQuiz(quiz)
-               {
-                   console.log(quiz)
+               submitQuiz(quiz) {
+                   this.submissionService
+                       .submitQuiz(quiz)
+                       .then((response) => {
+                           console.log(response);  });
                }
 
                ngOnInit() {

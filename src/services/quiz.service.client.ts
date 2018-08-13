@@ -38,11 +38,20 @@ export class QuizServiceClient  {
         }).then((response) => response);
     }
 
-    addQuestion(quizId, questionId)
-    {
+    addQuestion(quizId, questionId) {
         return fetch ((QUIZ_API_URL + '/quiz/' + quizId + '/question/' + questionId),{
             method: 'PUT',
             credentials: 'include'
         }).then((response) => response);
     }
+
+    deleteQuestionFromQuiz(quizId, questionId){
+        return fetch ((QUIZ_API_URL + '/quiz/' + quizId + '/question/' + questionId),{
+            method: 'DELETE',
+            credentials: 'include'
+        }).then((response) => response);
+
+    }
+
+
 }

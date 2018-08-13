@@ -8,7 +8,8 @@
    <li class ="list-group-item"
          *ngFor= "let choice of question.choices">
      {{choice.text}}
-     <input name =  "{{question._id}}"
+     <input  (click)= "selectedChoice (choice)"
+             name =  "{{question._id}}"
             type="radio" class ="float-right"/>
    </li>
  </ul>

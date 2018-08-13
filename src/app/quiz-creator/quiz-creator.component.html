@@ -1,6 +1,26 @@
 <div class = "container-fluid">
   <a class = "float-right btn btn-primary" routerLink="/quizzes">Back</a>
-<h2> Adding Questions to {{quiz.title}} </h2>
+<h2> {{quiz.title}} </h2>
+
+
+    <ul class="list-group">
+        <li class ="list-group-item">
+            Questions In Quiz
+        </li>
+        <br/>
+
+        <li class = "list-group-item"
+            *ngFor = "let question of quiz.questions">
+            {{question.title}} --- {{question._id}}--- {{question.questionType}}
+            <button (click)="deleteQuestionFromQuiz(question._id)" class="btn btn-danger float-right ">
+                Delete
+            </button>
+        </li>
+    </ul>
+
+    <br/>
+
+   <h2>List of Available Questions</h2>
 
   <ul class = "list-group">
       <li class="list-group-item active">
@@ -10,9 +30,11 @@
 
       <li class = "list-group-item"
               *ngFor = "let question of questions">
-          {{question.title}}
-
-          <button (click)="addQuestion(question._id)" class="btn btn-success float-right"> Add Question</button>
+          {{question.title}} --- {{question._id}} --- {{question.questionType}}
+           <div class = "btn-grp float-right">
+          <button (click)="addQuestion(question._id)" class="btn btn-success"> Add Question</button>
+               <button (click)="deleteQuestion(question._id)" class="btn btn-danger"> Delete Question</button>
+           </div>
       </li>
   </ul>
 

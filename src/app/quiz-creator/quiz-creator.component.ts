@@ -12,7 +12,7 @@ export class QuizCreatorComponent implements OnInit {
 
   quizId = '';
   questions = [];
-  quiz = {title: ''};
+  quiz = {title: '', questions: [] };
 
   constructor(private quizService: QuizServiceClient,
                 private activatedRoute: ActivatedRoute,
@@ -27,8 +27,28 @@ export class QuizCreatorComponent implements OnInit {
                   this.quizService.addQuestion(this.quizId, questionId)
                       .then(() => {
                         alert('question ' + ' ' +  questionId + '  ' + 'added to' + '  ' + this.quiz.title );
+                        this.findQuizById();
                       });
                 }
+
+                deleteQuestion (questionId) {
+                    this.questionService.deleteQuestion(questionId)
+                        .then(() => {
+                            this.findAllQuestions();
+                        });
+                }
+
+                     deleteQuestionFromQuiz(questionId){
+                      this.quizService.deleteQuestionFromQuiz( this.quizId, questionId)
+                          .then( () =>  {
+                              this.findQuizById();
+                          });
+  }
+                findQuizById() {
+                         this.quizService.findQuizById(this.quizId)
+                             .then(quiz => this.quiz = quiz);
+                     }
+
                 ngOnInit() {
 
         this.activatedRoute.params.subscribe(
@@ -36,8 +56,7 @@ export class QuizCreatorComponent implements OnInit {
 
         this.findAllQuestions();
 
-        this.quizService.findQuizById(this.quizId)
-            .then(quiz => this.quiz = quiz);
+        this.findQuizById();
 
 
     }

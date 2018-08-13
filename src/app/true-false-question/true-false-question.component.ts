@@ -10,6 +10,10 @@ export class TrueFalseQuestionComponent implements OnInit {
   @Input() question;
   constructor() { }
 
+  selectedAnswer(answer) {
+    this.question.trueFalseAnswer = answer;
+  }
+
   ngOnInit() {
   }
 

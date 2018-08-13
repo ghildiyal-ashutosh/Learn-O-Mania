@@ -7,9 +7,11 @@
     <br/>
     <li class="list-group-item">
 
-      <label><input type ="radio" name = "{{question._id}}"> True </label>
+      <label><input name = "{{question._id}}" (click)="selectedAnswer(true)"
+              type = "radio"> True </label>
       &nbsp;  &nbsp;  &nbsp;
-      <label><input type ="radio" name = "{{question._id}}"> False </label>
+      <label><input (click)="selectedAnswer(false)"
+              type ="radio" name = "{{question._id}}"> False </label>
 
     </li>
 
