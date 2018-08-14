@@ -19,6 +19,7 @@ export class QuizComponent implements OnInit {
                private submissionService: SubmissionServiceClient) {}
 
                submitQuiz(quiz) {
+      console.log(quiz);
                    this.submissionService
                        .submitQuiz(quiz)
                        .then((response) => {

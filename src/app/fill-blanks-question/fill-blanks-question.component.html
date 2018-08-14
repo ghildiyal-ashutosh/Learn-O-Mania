@@ -8,9 +8,9 @@
     <li  class = "list-group-item"
             *ngFor = "let blank of question.blanks"
             [ngSwitch] = "blank.indexOf('*')">
-    <div *ngSwitchCase="0"> = <input
-            [(ngModel)]="question.fillBlankAnswers[blank.split('=')[0].replace('*','')]"
-            placeholder = "{{blank.split('=')[0].replace('*','')}}"/></div>
+    <div *ngSwitchCase="0"> = <input type = "number"
+            [(ngModel)]="question.fillBlankAnswers[blank.split(' ')[0].replace('*','')]"
+            placeholder = "{{blank.split(' ')[0].replace('*','')}}"/></div>
 
       <div *ngSwitchCase="-1"> {{blank}} </div>
     </li>
