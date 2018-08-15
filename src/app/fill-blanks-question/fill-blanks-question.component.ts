@@ -11,7 +11,7 @@ export class FillBlanksQuestionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.question.fillBlankAnswers = {};
+    this.question.fillBlankAnswers = {var1: '', var2: ''};
   }
 
 }

@@ -11,7 +11,7 @@ export class EssayQuestionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.question.essayAnswer = 0;
+    this.question.essayAnswer = '';
   }
 
 }
