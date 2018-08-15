@@ -1,6 +1,11 @@
+
+const SUBMISSION_API_URL = 'https://webdev2-node-server-ashu95.herokuapp.com/api' ;
+
 import {Injectable} from '@angular/core';
 
-const SUBMISSION_API_URL = 'http://localhost:3000/api' ;
+// const SUBMISSION_API_URL = 'http://localhost:3000/api' ;
+
+
 
 
 @Injectable ()

@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4a6ffd-e22e-44f2-8e51-f425576e6aad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/essay-question/essay-question.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/essay-question/essay-question.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/essay-question/essay-question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/essay-question/essay-question.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/fill-blanks-question/fill-blanks-question.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/fill-blanks-question/fill-blanks-question.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/multiple-choice-question/multiple-choice-question.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/multiple-choice-question/multiple-choice-question.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/multiple-choice-question/multiple-choice-question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/multiple-choice-question/multiple-choice-question.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/quiz/quiz.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/quiz/quiz.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/quiz/quiz.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/quiz/quiz.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/true-false-question/true-false-question.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/true-false-question/true-false-question.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/question.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/question.service.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/quiz.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/quiz.service.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/section.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/section.service.client.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/submission.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/submission.service.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.client.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,62 +23,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz-submissions.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz-answers.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="quiz-answers.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state relative-caret-position="344">
+              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding>
+                <element signature="e#944#950#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz-list.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.html">
+      <file leaf-file-name="course.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/course.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="question.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/question.service.client.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" column="71" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+            <state relative-caret-position="15">
+              <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/user.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="submission.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/submission.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="section.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/section.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quiz.service.client.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/quiz.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="62" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -106,8 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/services/user.service.client.ts" />
-        <option value="$PROJECT_DIR$/src/services/section.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/sections/sections.component.html" />
         <option value="$PROJECT_DIR$/src/app/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/src/app/enrollment/enrollment.component.ts" />
@@ -116,8 +131,6 @@
         <option value="$PROJECT_DIR$/src/app/fill-blanks-question/fill-blanks-question.component.ts" />
         <option value="$PROJECT_DIR$/src/app/true-false-question/true-false-question.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/services/question.service.client.ts" />
-        <option value="$PROJECT_DIR$/src/services/quiz.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/quiz-creator/quiz-creator.component.ts" />
         <option value="$PROJECT_DIR$/src/app/quiz-creator/quiz-creator.component.html" />
         <option value="$PROJECT_DIR$/src/app/login/login.component.ts" />
@@ -129,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/app/essay-question/essay-question.component.ts" />
         <option value="$PROJECT_DIR$/src/app/submission/submission.component.html" />
         <option value="$PROJECT_DIR$/src/app/quiz/quiz.component.ts" />
-        <option value="$PROJECT_DIR$/src/services/submission.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.ts" />
         <option value="$PROJECT_DIR$/src/app/essay-question/essay-question.component.html" />
@@ -137,8 +149,15 @@
         <option value="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.ts" />
         <option value="$PROJECT_DIR$/src/app/quiz-list/quiz-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.html" />
-        <option value="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" />
         <option value="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" />
+        <option value="$PROJECT_DIR$/src/services/section.service.client.ts" />
+        <option value="$PROJECT_DIR$/src/services/quiz.service.client.ts" />
+        <option value="$PROJECT_DIR$/src/services/question.service.client.ts" />
+        <option value="$PROJECT_DIR$/src/services/submission.service.client.ts" />
+        <option value="$PROJECT_DIR$/src/services/user.service.client.ts" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -181,109 +200,6 @@
               <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="course-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="essay-question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="fill-blanks-question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="multiple-choice-question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz-answers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz-creator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz-submissions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="true-false-question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev2-angular-client-quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev2-angular-client-quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,12 +246,12 @@
       <workItem from="1534064542105" duration="29339000" />
       <workItem from="1534136423927" duration="14875000" />
       <workItem from="1534189685253" duration="43999000" />
-      <workItem from="1534278282510" duration="13702000" />
+      <workItem from="1534278282510" duration="14920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113290000" />
+    <option name="totallyTimeSpent" value="114508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -373,26 +289,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/services/user.service.client.ts</url>
-          <line>5</line>
+          <line>6</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/services/section.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/course.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/admin-homepage/admin.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/admin-homepage/admin.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -433,9 +336,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/course.service.client.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/sections/sections.component.ts">
@@ -487,20 +387,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/quiz-creator/quiz-creator.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/section.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-939">
-          <caret column="4" selection-start-column="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/user.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/submission/submission.component.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,27 +448,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/register/register.component.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/question.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/quiz.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/submission.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="39" column="61" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -680,20 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -703,6 +554,78 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="e#944#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/course.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/question.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/quiz.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/section.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/submission.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/user.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
