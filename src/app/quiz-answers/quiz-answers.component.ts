@@ -22,7 +22,7 @@ export class QuizAnswersComponent implements OnInit {
           params => this.subService. findSubmissionForQuizById(params['quizId'], params['submissionId'])
               .then((submissions) => this.submission = submissions));
 
-      
+
   }
 
 }

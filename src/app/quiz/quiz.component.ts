@@ -10,7 +10,7 @@ import {SubmissionServiceClient} from '../../services/submission.service.client'
 })
 export class QuizComponent implements OnInit {
 
-  quiz = {title: '', questions : [], _id: ''};
+  quiz = {title: '', questions : []};
 
 
 
