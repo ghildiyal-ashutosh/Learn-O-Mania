@@ -1,0 +1,57 @@
+<div class = "container-fluid">
+  <h3> Welcome {{submissions[0].student.username}}</h3>
+
+  <h4> Here is a list of your submissions  Latest Submission listed at bottom!!!</h4>
+  <table class="table">
+    <thead>
+    <tr>
+      <th> Quiz-Title</th>
+      <th> Score</th>
+      <th> Total </th>
+      <th> TimeStamp (in Milliseconds)</th>
+    </tr>
+    </thead>
+
+<tbody>
+    <tr (click) = "selectSubmission(submission)"
+         *ngFor ="let submission of submissions">
+
+      <td> <a routerLink='/submission/{{submissionId}}'> {{submission.quiz.title}} </a>  </td>
+      <td> {{submission.score}} </td>
+      <td>  {{submission.total}} </td>
+      <td> {{submission.timeStamp}}</td>
+    </tr>
+</tbody>
+  </table>
+
+<div [hidden]="viewStatus">
+<h5> {{evalSubmission.quiz.title}}  (Score: {{evalSubmission.score}})</h5>
+  <table class="table" >
+    <tr>
+    <th>
+     Question
+    </th>
+      <th>
+        Question-Type
+      </th>
+
+      <th> Points</th>
+
+      <th> Scored</th>
+
+
+    </tr>
+
+    <tr *ngFor = "let answer of evalSubmission.answers">
+
+    <td> {{answer.question.questionText}} </td>
+      <td> {{answer.question.questionType}}</td>
+    <td> {{answer.question.points}}</td>
+    <td>{{answer.scored}}</td>
+
+    </tr>
+
+  </table>
+</div>
+
+</div>

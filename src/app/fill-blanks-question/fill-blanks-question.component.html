@@ -1,19 +1,11 @@
 <div class = "container-fluid">
-  <ul class = "list-group">
-    <li class = "list-group-item">
-      {{question.questionText}}
-
-    </li>
-    <br/>
-    <li  class = "list-group-item"
-            *ngFor = "let blank of question.blanks"
+    <span *ngFor = "let blank of question.blanks"
             [ngSwitch] = "blank.indexOf('*')">
-    <div *ngSwitchCase="0"> = <input type = "number"
-            [(ngModel)]="question.fillBlankAnswers[blank.split(' ')[0].replace('*','')]"
-            placeholder = "{{blank.split(' ')[0].replace('*','')}}"/></div>
 
-      <div *ngSwitchCase="-1"> {{blank}} </div>
-    </li>
-  </ul>
+    <span *ngSwitchCase="0"> = <input type = "number"
+            [(ngModel)]="question.fillBlankAnswers[blank.split(' ')[0].replace('*','')]"
+            placeholder = "{{blank.split(' ')[0].replace('*','')}}"/></span>
+          <span *ngSwitchCase="-1"> {{blank}} </span>
+      </span>
 
 </div>

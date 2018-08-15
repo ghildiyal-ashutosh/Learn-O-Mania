@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {QuizServiceClient} from '../../services/quiz.service.client' ;
+import {SubmissionServiceClient} from '../../services/submission.service.client';
+import {Router} from '@angular/router';
+import {consoleTestResultHandler} from 'tslint/lib/test';
 
 @Component({
   selector: 'app-quiz-list',
@@ -8,10 +11,29 @@ import {QuizServiceClient} from '../../services/quiz.service.client' ;
 })
 export class QuizListComponent implements OnInit {
     quizzes = [];
-    selectedQuiz = {};
+    selectedQuiz = {title: '', _id: ''};
     quizName = '';
+    numberOfSubmissions;
+    submissions = [] ;
 
-    constructor(private quizService: QuizServiceClient) {
+
+
+    students =  [{student: {username: '' , _id: ''} }];
+    studentView = true;
+
+    quizSubmissions = [];
+    submissionView = true;
+
+    currentSubmission = [];
+    currentView = true;
+
+
+
+
+
+    constructor(private quizService: QuizServiceClient,
+                private subService: SubmissionServiceClient,
+                private router: Router) {
     }
 
     selectQuiz(quiz) {
@@ -42,8 +64,59 @@ export class QuizListComponent implements OnInit {
           .then((response) => this.quizzes = response);
     }
 
+
+    findAllSubmissions () {
+        this.subService.findAllSubmissions()
+            .then((submissions) => {
+                this.submissions = submissions;
+                this.numberOfSubmissions = submissions.length;
+            });
+
+
+    }
+
+    quizSubmission(quiz) {
+        this.selectedQuiz = quiz;
+        console.log(quiz._id);
+    }
+
+
+
+    getStudents(quiz) {
+
+
+        this.selectedQuiz = quiz;
+         this.subService.findAllSubmissionsForQuiz(this.selectedQuiz._id)
+             .then((submissions) => {
+                 this.students = submissions;
+                 this.studentView = false;
+             });
+    }
+
+    getSubmissions(quiz) {
+
+        this.selectedQuiz = quiz;
+
+        this.subService.findAllSubmissionsForQuiz(this.selectedQuiz._id)
+            .then((submissions) => {
+                this.quizSubmissions = submissions;
+                this.submissionView = false;
+            });
+    }
+
+    currentSubmissions(quiz) {
+        this.selectedQuiz = quiz;
+        this.subService.findAllSubmissionsForStudentForQuiz(this.selectedQuiz._id)
+            .then((submission) => this.currentSubmission = submission);
+
+        this.currentView = false;
+        }
+
+
+
     ngOnInit() {
         this.findAllQuizzes();
+        this.findAllSubmissions();
 
     }
 }

@@ -10,6 +10,9 @@ import {CourseListComponent} from './course-list/course-list.component';
 import {QuizListComponent} from './quiz-list/quiz-list.component';
 import {QuizComponent} from './quiz/quiz.component';
 import {QuizCreatorComponent} from './quiz-creator/quiz-creator.component';
+import {SubmissionComponent} from './submission/submission.component';
+import {QuizSubmissionsComponent} from './quiz-submissions/quiz-submissions.component';
+import {QuizAnswersComponent} from './quiz-answers/quiz-answers.component';
 
 const appRoutes: Routes = [
   {path: 'courses',  component:    CourseListComponent},
@@ -25,7 +28,13 @@ const appRoutes: Routes = [
   {path: 'home' , component:  WhiteBoardComponent},
     {path: 'quizzes' , component: QuizListComponent},
     {path: 'quiz/:quizId' , component: QuizComponent},
-    {path: 'editQuiz/:quizId', component: QuizCreatorComponent}
+    {path: 'editQuiz/:quizId', component: QuizCreatorComponent},
+    {path: 'student/submissions', component: SubmissionComponent},
+    {path: 'quizzes/submissions' , component : QuizListComponent},
+    {path: 'quizzes/students' , component : QuizListComponent},
+    {path: 'quizzes/currentUser/submission', component: QuizListComponent},
+    {path: 'quiz/:quizId/submissions' , component : QuizSubmissionsComponent},
+    {path: 'quiz/:quizId/submission/:submissionId' , component : QuizAnswersComponent}
 ];
 
 

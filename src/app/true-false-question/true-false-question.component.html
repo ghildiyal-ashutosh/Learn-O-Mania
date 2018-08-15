@@ -1,17 +1,14 @@
 <div class ="container-fluid">
   <ul class = "list-group">
-    <li class = "list-group-item">
-      {{question.questionText}}
 
-    </li>
-    <br/>
     <li class="list-group-item">
 
-      <label><input name = "{{question._id}}" (click)="selectedAnswer(true)"
+      <label for = "{{question._id}}" ><input id ="{{question._id}}" name = "{{question._id}}" (click)="selectedAnswer(true)"
               type = "radio"> True </label>
       &nbsp;  &nbsp;  &nbsp;
-      <label><input (click)="selectedAnswer(false)"
-              type ="radio" name = "{{question._id}}"> False </label>
+
+      <label for = "{{question.questionText}}"><input (click)="selectedAnswer(false)" id = "{{question.questionText}}"
+              type ="radio" name = "{{question._id}}">  False </label>
 
     </li>
 

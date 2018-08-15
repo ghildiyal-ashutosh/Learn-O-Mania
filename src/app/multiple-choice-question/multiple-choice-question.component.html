@@ -1,16 +1,14 @@
 <div class = "container-fluid">
  <ul class = list-group>
-   <li class = "list-group-item">
-     {{question.questionText}}
-   </li>
-   <br/>
 
-   <li class ="list-group-item"
-         *ngFor= "let choice of question.choices">
-     {{choice.text}}
-     <input  (click)= "selectedChoice (choice)"
+     <li class ="list-group-item"
+         *ngFor= "let choice of question.choices"
+         [ngClass] = "{'active': choice.text === selectedChoice.text}">
+
+       <input
+               (click)= "selectChoice (choice)"
              name =  "{{question._id}}"
-            type="radio" class ="float-right"/>
+            type="radio" class ="float-left"/> &nbsp; &nbsp;  {{choice.text}}
    </li>
  </ul>
 

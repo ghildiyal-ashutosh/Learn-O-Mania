@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
           alert('Log In fail Try again');
         }
         else {
-          this.router.navigate(['profile/']);
+          this.router.navigate(['profile']);
         }
       });
   }

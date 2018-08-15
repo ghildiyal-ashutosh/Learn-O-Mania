@@ -10,9 +10,12 @@ export class MultipleChoiceQuestionComponent implements OnInit {
   @Input() question;
   constructor() { }
 
-  selectedChoice(choice)
+  selectedChoice = {value: ''};
+
+  selectChoice(choice)
   {
    this.question.multipleChoiceAnswer = this.question.choices.indexOf(choice);
+   this.selectedChoice = choice;
   }
 
   ngOnInit() {

@@ -9,11 +9,26 @@
         <br/>
         <li  class = "list-group-item"
                 *ngFor = "let question of quiz.questions">
-            <div class = row>
-                <h5 class = "col-2"> {{question.title}}</h5>
-                <h5 class = "col-8">{{question.description}}</h5>
-            <h5 class="float-right col-2">{{question.points}} pts </h5>
+
+            <div class="row">
+                <h3 class = "col-4">
+
+                    {{question.title}}
+                </h3>
+                <h3 class = "col-6">
+                    {{question.description}}
+
+                </h3>
+                <h3>
+                    {{question.points}} pts
+                </h3>
             </div>
+            <br/>
+
+            <div class = "row">
+                <p>{{question.questionText}}</p>
+            </div>
+            <br/>
 
             <div [ngSwitch] = "question.questionType">
                 <app-multiple-choice-question [question]="question"
@@ -36,7 +51,10 @@
         </li>
     </ul>
     <br/>
-    <button class = "btn btn-primary float-right btn-lg" (click)="submitQuiz(quiz)"> Submit</button>
+    <div class = "btn-group float-left">
+        <button class = "btn btn-danger" routerLink= '/quizzes'> Cancel</button>
+    <button class = "btn btn-primary" (click)="submitQuiz(quiz)"> Submit</button>
+    </div>
     <br/>
     <br/>
 

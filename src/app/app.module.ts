@@ -24,6 +24,9 @@ import { MultipleChoiceQuestionComponent } from './multiple-choice-question/mult
 import { EssayQuestionComponent } from './essay-question/essay-question.component';
 import { FillBlanksQuestionComponent } from './fill-blanks-question/fill-blanks-question.component';
 import {SubmissionServiceClient} from '../services/submission.service.client';
+import { SubmissionComponent } from './submission/submission.component';
+import { QuizSubmissionsComponent } from './quiz-submissions/quiz-submissions.component';
+import { QuizAnswersComponent } from './quiz-answers/quiz-answers.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import {SubmissionServiceClient} from '../services/submission.service.client';
     TrueFalseQuestionComponent,
     MultipleChoiceQuestionComponent,
     EssayQuestionComponent,
-    FillBlanksQuestionComponent
+    FillBlanksQuestionComponent,
+    SubmissionComponent,
+    QuizSubmissionsComponent,
+    QuizAnswersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,9 @@
 <div class ="container-fluid">
-  <ul class = "list-group">
-    <li class = "list-group-item">
-      {{question.questionText}}
-    </li>
+
+  <div class ="row">
 
   <textarea [(ngModel)] = "question.essayAnswer"
+            placeholder="Enter a string of length greater than or equal to {{question.essayLength}}"
           class ="form-control"></textarea>
-  </ul>
+  </div>
 </div>

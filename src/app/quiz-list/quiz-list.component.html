@@ -3,6 +3,10 @@
     <br/>
     <br/>
 
+    <h2 class="float-left"> Number of Submissions: {{numberOfSubmissions}}</h2>
+    <br/>
+    <br/>
+
     <ul class = "list-group">
         <li class = "list-group-item active">
         Quizzes
@@ -15,21 +19,119 @@
             <button class ="btn-success btn form-control"
                     (click)= "createQuiz()"> Create</button>
         </li>
+        <br/>
 
-        <li  class = "list-group-item"
-                 [ngClass] = "{'active': quiz._id === selectedQuiz._id}"
-                 *ngFor="let quiz of quizzes">
-            {{quiz.title}}
-            <div class = "btn-group float-right">
+        <li
+                class = "list-group-item "
+                *ngFor="let quiz of quizzes">
+            <div class = "row">
+            <div class = "col-2"> {{quiz.title}} </div>
+            <div class = "btn-grp col-6">
+                <a  class = "btn"  routerLink = '/quizzes/students'     (click)="getStudents(quiz)"> Students</a>
+                <a class = "btn"   routerLink = '/quizzes/submissions'   (click)= "getSubmissions(quiz)"> Submissions</a>
+                <a class = "btn"   routerLink = '/quizzes/currentUser/submission'
+                   (click)= "currentSubmissions(quiz)">Current User</a>
+                <a      (click)= "quizSubmission(quiz)"
+                        href = '/quiz/{{selectedQuiz._id}}/submissions'>
+                    Quiz-Submissions</a>
+            </div>
+
+            <div class = "btn-group float-right col-4">
             <a class= " btn-success btn"
                href="quiz/{{quiz._id}}"> Take </a>
-
-            <a class=" btn-primary btn"
+                <a class=" btn-primary btn"
                href="editQuiz/{{quiz._id}}"> Add Question </a>
                 <a class=" btn-danger btn"
                    (click)="deleteQuiz(quiz._id)"> Delete Quiz </a>
             </div>
+            </div>
 
         </li>
     </ul>
+
+    <br/> <br/>
+
+
+
+    <div [hidden]="currentView" class="float-left">
+        <h3>  List of Submissions By Current User : {{selectedQuiz.title}} </h3>
+        <h5> Total Trials : {{currentSubmission.length}}</h5>
+        <table class = "table">
+
+            <tr>
+                <th>
+                    SubmissionId
+                </th>
+                <th>Marks Scored </th>
+                <th> Total Marks</th>
+
+            </tr>
+
+
+
+            <tr *ngFor = "let submission of currentSubmission">
+
+                <td>{{submission._id}} </td>
+                <td> {{submission.score}}</td>
+                <td> {{submission.total}}</td>
+
+            </tr>
+
+        </table>
+    </div>
+
+
+
+    <div [hidden]="submissionView" class="float-left">
+        <h3>  List of Submissions : {{selectedQuiz.title}}</h3>
+        <table class = "table">
+
+            <tr>
+              <th>
+                  SubmissionId
+              </th>
+              <th>Marks Scored </th>
+              <th> Total Marks</th>
+          </tr>
+
+
+
+            <tr *ngFor = "let submission of quizSubmissions">
+
+                <td>{{submission._id}} </td>
+                <td> {{submission.score}}</td>
+                <td> {{submission.total}}</td>
+
+
+            </tr>
+
+        </table>
+    </div>
+
+    <div [hidden]="studentView" class="float-left">
+        <h3>  List of Students : {{selectedQuiz.title}}</h3>
+        <table class = "table">
+            <tr>
+                <th>
+                Name
+                 </th>
+                <th>
+              Student_Id
+                </th>
+            </tr>
+
+            <tr *ngFor = "let student of students">
+                <td>
+                {{student.student.username}}
+                </td>
+                <td>
+                {{student.student._id}}
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
 </div>

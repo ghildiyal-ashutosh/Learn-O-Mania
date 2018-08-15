@@ -1,0 +1,79 @@
+<div class ="container-fluid">
+  <h3> Quiz : {{submissions[0].quiz.title}}</h3>
+  <ul class ="list-group">
+    <li class = "list-group-item">
+      <input [(ngModel)] = "studentName"
+              placeholder="Search Student here" class ="form-control"/>
+      <button class ="btn btn-primary form-control" (click)="searchStudent()"> Search</button>
+    </li>
+    <br/>
+    <li class ="list-group-item">
+      <div class = "row">
+        <div class = "col-2"> Student Name</div>
+        <div class = "col-3"> TimeStamp (in Milliseconds)</div>
+        <div class = "col-2"> Score</div>
+        <div class = "col-5"> Links  ((Double Click))</div>
+      </div>
+
+    </li>
+
+    <li class="list-group-item"
+            *ngFor = "let submission of submissions">
+      <div class ="row">
+        <div class = "col-2">
+           {{submission.student.username}}
+        </div>
+        <div class = "col-3">
+          {{submission.timeStamp}}
+
+        </div>
+        <div class = "col-2">
+          {{submission.score}}
+        </div>
+        <div class = "col-5">
+          <a  routerLink = '/quiz/{{quizId}}/submission/{{selectedSubmissionId}}'
+                  (click)= "selectSubmission(submission) "> Link To Answers</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <br/> <br/>
+
+  <div [hidden]="viewStatus">
+    <h4> Searched Students: {{studentName}}</h4>
+    <ul class = "list-group">
+      <li class ="list-group-item">
+        <div class = "row">
+          <div class = "col-4"> Student Name</div>
+          <div class = "col-4"> TimeStamp (in Milliseconds)</div>
+          <div class = "col-2"> Score</div>
+          <div class = "col-2"> Links ((Double Click))</div>
+        </div>
+
+      <li *ngFor = "let studentSubmission of studentSubmissions "
+            class = "list-group-item">
+
+      <div class ="row">
+        <div class = "col-2">
+          {{studentSubmission.student.username}}
+        </div>
+        <div class = "col-3">
+          {{studentSubmission.timeStamp}}
+
+        </div>
+        <div class = "col-2">
+          {{studentSubmission.score}}
+        </div>
+        <div class ="col-5">
+          <a routerLink = '/quiz/{{quizId}}/submission/{{selectedSubmissionId}}'
+                  (click)= "selectSubmission(studentSubmission) "> Link To Answers </a>
+        </div>
+      </div>
+
+</li>
+    </ul>
+
+  </div>
+  <br/><br/>
+</div>
