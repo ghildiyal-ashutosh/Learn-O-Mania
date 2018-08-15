@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a4a6ffd-e22e-44f2-8e51-f425576e6aad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/submission/submission.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/submission/submission.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="submission.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="submission.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/submission/submission.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="481">
+              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -96,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz-answers.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quiz-answers.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="404">
+              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="e#944#950#0" expanded="true" />
                 <element signature="e#951#957#0" expanded="true" />
@@ -168,8 +167,8 @@
         <option value="$PROJECT_DIR$/src/app/quiz-submissions/quiz-submissions.component.html" />
         <option value="$PROJECT_DIR$/src/app/fill-blanks-question/fill-blanks-question.component.ts" />
         <option value="$PROJECT_DIR$/src/app/essay-question/essay-question.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" />
         <option value="$PROJECT_DIR$/src/app/submission/submission.component.html" />
+        <option value="$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html" />
       </list>
     </option>
   </component>
@@ -318,12 +317,12 @@
       <workItem from="1534064542105" duration="29339000" />
       <workItem from="1534136423927" duration="14875000" />
       <workItem from="1534189685253" duration="43999000" />
-      <workItem from="1534278282510" duration="20572000" />
+      <workItem from="1534278282510" duration="20849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120160000" />
+    <option name="totallyTimeSpent" value="120437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -684,17 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="e#944#950#0" expanded="true" />
-            <element signature="e#951#957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/multiple-choice-question/multiple-choice-question.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -704,8 +692,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/submission/submission.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        <state relative-caret-position="481">
+          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/quiz-answers/quiz-answers.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#944#950#0" expanded="true" />
+            <element signature="e#951#957#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
