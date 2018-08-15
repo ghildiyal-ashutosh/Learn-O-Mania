@@ -19,10 +19,10 @@ export class QuizAnswersComponent implements OnInit {
 
   ngOnInit() {
       this.activatedRoute.params.subscribe(
-          params => this.subService.findSubmissionById(params['quizId'], params['submissionId'])
+          params => this.subService. findSubmissionForQuizById(params['quizId'], params['submissionId'])
               .then((submissions) => this.submission = submissions));
 
-      console.log(this.submission.answers);
+      
   }
 
 }

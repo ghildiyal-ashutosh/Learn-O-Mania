@@ -65,4 +65,13 @@ export class SubmissionServiceClient   {
             return response.json();
         }));
     }
+
+    findSubmissionForQuizById (quizId, submissionId) {
+
+        return fetch ((SUBMISSION_API_URL + '/quiz/' + quizId + '/submission/' + submissionId + '/findAll' ), {
+            credentials : 'include'
+        }).then((function (response) {
+            return response.json();
+        })) ;
+    }
 }
