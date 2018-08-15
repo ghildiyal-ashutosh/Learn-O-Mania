@@ -18,22 +18,23 @@
         <div class = "col-5">
           {{answer.question.questionText}}
         </div>
-          <div [ngSwitch]="answer.question.questionType">
+          <div    class = "col-5"
+                  [ngSwitch]="answer.question.questionType">
 
-            <div  class = "col-5"
+            <div
                     *ngSwitchCase="'MULTIPLE_CHOICE'">
               {{answer.multipleChoiceAnswer}}
             </div>
 
-            <div  class = "col-5"
+            <div
                     *ngSwitchCase="'FILL_BLANKS'">
               {{answer.fillBlankAnswers.var1}} &nbsp; &nbsp; {{answer.fillBlankAnswers.var2}}
             </div>
-            <div  class = "col-5"
+            <div
                     *ngSwitchCase="'ESSAY'">
               {{answer.essayAnswer}}
             </div>
-            <div  class = "col-5"
+            <div
                     *ngSwitchCase="'TRUE_FALSE'">
               {{answer.trueFalseAnswer}}
             </div>
